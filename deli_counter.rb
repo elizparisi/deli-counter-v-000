@@ -4,8 +4,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   elsif katz_deli(customers)
     puts "The line is currently:"
-    katz_deli.each_with_index {|customer, index| katz_deli <<  " #{index + 1}. #{customer}"}
+    katz_deli.each_with_index(1) {|customer, index| katz_deli <<  " #{index + 1}. #{customer}"}
   end
+    puts katz_deli
 end
 
 def take_a_number(katz_deli, new_customer)
