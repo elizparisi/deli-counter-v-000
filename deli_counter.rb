@@ -4,7 +4,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   elsif katz_deli(customers)
     puts "The line is currently:"
-    katz_deli.each_with_index {|customer, index| katz_deli <<  " #{index + 1}. #{customer}"}
+    katz_deli.each_with_index {|customer, index| katz_deli <<  " #{index + 1}. #{customers}"}
     puts katz_deli
   end
 end
