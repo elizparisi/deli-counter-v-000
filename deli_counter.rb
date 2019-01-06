@@ -1,11 +1,12 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.empty? 
+  if katz_deli.empty?
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
-    katz_deli.each.with_index(1) do |customer, index| current_line <<  "#{index}. #{customer}"
-  end
+    katz_deli.each.with_index(1) do |customer, i|
+      current_line << " #{i}. #{customer}"
+    end
     puts current_line
   end
 end
